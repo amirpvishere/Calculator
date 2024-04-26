@@ -7,58 +7,58 @@ window.maxsize(400, 300)
 window.minsize(400, 300)
 
 # LABEL:
-label = Label(text="Plaese Enter Your Numbers Below", fg='white', bg='black')
-javab = Label(text="")
+label = Label(text="plaese Input Your Numbers Below", fg='white', bg='black')
+answer = Label(text="")
 label.place(x=100, y=50)
-javab.place(x=175, y=250)
+answer.place(x=175, y=250)
 
-# Plus:
+# PLUS:
 
 
 def add():
     x = int(input.get())
     y = int(input2.get())
     c = x + y
-    javab.config(text=str(c))
+    answer.config(text=str(c))
 
 
 j = Button(text='+', fg='white', bg='black', command=add, height=1, width=1)
 j.place(x=200, y=200)
 
-# Minus:
+# MINUS:
 
 
 def minus():
     x = int(input.get())
     y = int(input2.get())
     c = y - x
-    javab.config(text=str(c))
+    answer.config(text=str(c))
 
 
 m = Button(text='-', fg='white', bg='black', command=minus, height=1, width=1)
 m.place(x=150, y=200)
 
-# Multiply:
+# MULTIPLY:
 
 
-def times():
+def multiply():
     x = int(input.get())
     y = int(input2.get())
     c = x * y
-    javab.config(text=str(c))
+    answer.config(text=str(c))
 
 
-z = Button(text='X', fg='white', bg='black', command=times, height=1, width=1)
+z = Button(text='X', fg='white', bg='black', command=multiply, height=1, width=1)
 z.place(x=100, y=200)
 
-# Devide:
+# DEVIDE:
 
 
 def devide():
     x = int(input.get())
     y = int(input2.get())
     c = y / x
-    javab.config(text=str(c))
+    answer.config(text=str(c))
 
 
 t = Button(text='÷', fg='white', bg='black', command=devide, height=1, width=1)
